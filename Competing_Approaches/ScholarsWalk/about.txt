@@ -1,5 +1,4 @@
-Here, you will find the implementation of ScholarsWalk model for course recommendation and re-purposing it for the course enrollment prediction task provided in the paper. 
+Here, you will find the implementation of ScholarsWalk model for course recommendation.
 Explanation of each Notebook file:
 
-scholar's_walk.ipynb--> functions to build ScholarsWalk model, calculate recall score for all courses and utilize the output of recommendations to estimate number of enrollments in all courses and compute MAE, RMSE for all courses in target semesters. 
-scholar's_walk_CIS.ipynb-->  functions to build ScholarsWalk model, calculate recall score for CIS courses and utilize the output of recommendations to estimate number of enrollments in CIS courses and compute MAE, RMSE for CIS courses in target semesters. 
+scholar's_walk.ipynb--> functions to build ScholarsWalk model, calculate recall score for all courses (step by step in different cells). 
