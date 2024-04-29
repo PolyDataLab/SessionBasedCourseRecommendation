@@ -1,0 +1,15 @@
+Here, you will find the implementation of LSTM model for course recommendation and re-purposing it for the course enrollment prediction task provided in the paper. 
+Explanation of each Python file:
+
+preprocess.py --> preprocess the training, validation, and test data.
+offered_courses.py --> Calculate the offered course list for each semester from all the data. 
+utils.py --> post-processing function to filter out if a course is not offered in the target semester or if a student took a course in prior semesters to recommend new courses, 
+  a function to build knowledge for training the model,
+  and a function to generate sequence of batches for training, validation and testing. 
+building_knowledge.py --> build knowledge for training the model calling functions from utils.py.
+layers.py --> create RNN encoder where we use Multiple LSTM Cells.
+models.py --> Define LSTM model and functions to compute loss. 
+procedure.py --> functions to train, validate and test the model and calculate recall score for all courses and re-purpose the recommendation output to estimate the number of enrollments in courses and compute MAE, RMSE for all courses in target semesters. 
+procedure_CIS.py --> define functions to train, validate and test the model and calculate recall score for CIS Departmental courses and re-purpose the recommendation output to estimate the number of enrollments in CIS courses and compute MAE, RMSE for CIS courses in target semesters.
+main_gpu.py--> Set the parameters and call the functions from procedure.py file to compute MAE, RMSE for all courses in target semesters. 
+main_gpu_CIS.py--> Set the parameters and call the functions from procedure_CIS.py file to compute MAE, RMSE for CIS Departmental courses in target semesters.
