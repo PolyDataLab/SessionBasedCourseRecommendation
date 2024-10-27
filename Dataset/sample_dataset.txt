@@ -19,3 +19,6 @@ StudentID (anonymized) CourseID   Semester   Grade
 
 We convert them to create a session-based list of baskets containing a list of courses for each user. For example, for student 001, we get,
 [['CIS1001', 'CSE1002', 'COP1007'], ['CIS1008', 'CSE1009', 'COT1011'], ['CIS1005', 'MAT1012']]. 
+
+
+Note: We cannot share the actual dataset collected from our university because of preserving the privacy of students' data. 
