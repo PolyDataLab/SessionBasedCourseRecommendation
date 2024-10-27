@@ -1,0 +1,21 @@
+StudentID (anonymized) CourseID   Semester   Grade
+001                    CIS1001  Fall-2018      A
+001                    CSE1002  Fall-2018      A-
+001                    COP1007  Fall-2018      A
+001                    CIS1008  Spring-2019    A-
+001                    CSE1009  Spring-2019    C+
+001                    COT1011  Spring-2019    B
+001                    CIS1005  Summer-2019    B+
+001                    MAT1012  Summer-2019    C-
+002                    CIS1001  Fall-2018      A-
+002                    CSE1004  Fall-2018      A-
+002                    COP1005  Fall-2018      A
+002                    CIS1006  Spring-2019    A-
+002                    CSE1009  Spring-2019    C-
+002                    COP1012  Spring-2019    D
+002                    MAT1013  Fall-2019      B+
+002                    CSE1003  Fall-2019      C-
+...
+
+We convert them to create a session-based list of baskets containing a list of courses for each user. For example, for student 001, we get,
+[['CIS1001', 'CSE1002', 'COP1007'], ['CIS1008', 'CSE1009', 'COT1011'], ['CIS1005', 'MAT1012']]. 
