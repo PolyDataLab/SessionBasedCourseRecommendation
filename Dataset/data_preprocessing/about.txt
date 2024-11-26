@@ -1,0 +1,1 @@
+This file contains the python code of preprocessing the data to create an instance for each student that consists of a list of list for courses taken semester-by-semester (sequentially) by that student. We split the dataset into three sets: training, validation and test set. 
